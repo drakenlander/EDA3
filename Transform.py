@@ -10,7 +10,7 @@ connectionString = f'DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={server};DA
 conn = pyodbc.connect(connectionString, autocommit=True)
 cursor = conn.cursor()
 
-sqlFile = open('Query.sql', 'r')
+sqlFile = open('Trans.sql', 'r')
 queryFile = sqlFile.read()
 sqlFile.close()
 splitQueries = queryFile.split(';')
